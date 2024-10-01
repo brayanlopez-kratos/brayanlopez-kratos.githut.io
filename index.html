@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio - [CR7]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="home" id="home">
+        <p class="home__icon" id="home__icon"><i class="fa-solid fa-house"></i></p>
+        <div class="home__content">
+            <img src="images/profile.jpg" class="home__img">
+            <h2 class="home__title">fifa 14</h2>
+        </div>
+    </div>
+
+    <header class="main">
+        <h2 class="main__logo">ronaldo</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="active">motivation</a></li>
+                <li><a href="#">consistent</a></li>
+                <li><a href="#">discipline</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="name">
+        <h1>gallery of the champion</h1>
+    </div>
+
+    <section class="gallery">
+        <div class="gallery__picture gallery__picture--g1">
+            <img src="images/img-1.jpg" class="gallery__img">
+        </div>
+
+        <div class="gallery__picture gallery__picture--g2">
+            <img src="images/img-2.jpg" class="gallery__img">
+        </div>
+
+        <div class="gallery__picture gallery__picture--g3">
+            <img src="images/img-3.jpg" class="gallery__img">
+        </div>
+
+        <div class="gallery__picture gallery__picture--g4">
+            <img src="images/img-4.jpg" class="gallery__img">
+        </div>
+        
+        <div class="gallery__picture gallery__picture--g5">
+            <img src="images/img-5.jpg" class="gallery__img">
+        </div>
+    </section>
+
+    <script>
+        let icon = document.getElementById('home__icon');
+        let home = document.getElementById('home');
+
+        icon.addEventListener('click', () =>{
+            document.getElementById('home').classList.toggle('active')
+        })
+
+    </script>
+
+</body>
+</html>
